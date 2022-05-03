@@ -1,0 +1,8 @@
+{
+  "name": "github-login-app",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Coderpunktech",
+  "license": "MIT",
+  "workspaces": ["packages/*"]
+}
