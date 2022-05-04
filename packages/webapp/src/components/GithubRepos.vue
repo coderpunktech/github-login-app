@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div v-if="!loading && error !== null">
+    <div v-if="!loading && error !== ''">
       <b-message type="is-danger">
         {{ error }}
       </b-message>
@@ -35,14 +35,15 @@
   </div>
 </template>
 <script lang="ts">
+import Vue from 'vue'
 import axios from 'axios'
 
-export default {
+export default Vue.extend({
   data() {
     return {
       repos: [],
       loading: true,
-      error: null
+      error: ''
     }
   },
   methods: {
@@ -52,7 +53,7 @@ export default {
   },
   mounted() {
     const token = this.$store.state.auth.token
-    this.error = null
+    this.error = ''
     axios({
       method: 'get',
       url: 'https://api.github.com/user/repos',
@@ -70,7 +71,7 @@ export default {
       console.error(err)
     })
   }
-}
+})
 </script>
 <style lang="css">
 .custom {
