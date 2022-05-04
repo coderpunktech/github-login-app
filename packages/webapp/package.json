@@ -9,8 +9,14 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
+    "axios": "^0.27.2",
+    "buefy": "^0.9.20",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.3",
+    "vue-cookies": "^1.8.1",
     "vue-property-decorator": "^9.1.2",
     "vuex": "^3.6.2"
   },
