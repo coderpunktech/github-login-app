@@ -11,10 +11,10 @@ command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
 
-# [vars]
-# CLIENT_ID = ""
-# CLIENT_SECRET = ""
-# CLIENT_URL = ""
+[vars]
+CLIENT_ID = ""
+CLIENT_SECRET = ""
+CLIENT_URL = ""
 
 [dev]
 ip = "0.0.0.0"
